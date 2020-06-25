@@ -88,7 +88,7 @@ for _line in open(sys.argv[1]):
 
 output_file = open(sys.argv[2], 'w')
 for ent in database:
-    output_line = f'"{ent.local_path}","{ent.share_path}","{ent.users}","{ent.users_hash}","{ent.perm_read}","{ent.perm_write},"{ent.perm_exec}","{ent.comment}"\n'
+    output_line = f'"{ent.local_path}","{ent.share_path}","{ent.users}","{ent.users_hash}","{ent.perm_read}","{ent.perm_write}","{ent.perm_exec}","{ent.comment}"\n'
     output_file.write(output_line)
 #    print(output_line)
 
